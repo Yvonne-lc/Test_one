@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 顶部导航栏 */
+.top{
+    height: 52px;
+    background-color: #333;
+}
+.top_ul{
+    display: flex;
+    justify-self: flex-end;
+}
+.top li{
+    line-height: 52px;
+}
+.top_ul a{
+    color: #fff;
+    font-size: 14px;
+    border-right: 1px solid #999;
+    padding: 0 15px;
+}
+.top_ul li:last-child a{
+    border: none;
+}
+.top_ul a span{
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+    background: url("./../img/精灵图.PNG") -160px -70px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.top_ul a:hover{
+    color: #5EB69C;
+}
+
+
+/* 头部 */
+.header{
+    height: 88px;
+}
+.header .wrapper{
+    margin: 22px auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+} 
+.header_ul{
+    flex: 2;
+}
+.header_ul ul{
+    display: flex;
+}
+.header_ul li{
+    width: 78px;
+    text-align: center;
+}
+.header_ul li:last-child{
+    margin-right: 36px;
+}
+.header_ul li a{
+    color: #333;
+    padding-bottom: 8px;
+}
+.header_ul li a:hover{
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+.search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #F4F4F4;
+}
+.search span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("./../img/精灵图.PNG") -80px -70px;
+    margin-right: 8px;
+}
+.search input{
+    color: #333;
+    width: 150px;
+    font-size: 16px;
+    padding-left: 2px;
+}
+.search input::placeholder{
+    color: #ccc;
+}
+.car{
+    flex: 1;
+    margin-left: 28px;
+}
+.car a{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("./../img/精灵图.PNG") -118px -68px;
+}
+.car span{
+    position: relative;
+    top: -20px;
+    left: -10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #E26237;
+    padding: 0 6px;
+    border-radius: 8px;
+}
+
+
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+/* 侧导航 */
+.banner .aside{
+    float: left;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 12px;
+}
+.banner .aside a{
+    color: #fff;
+    font-size: 14px;
+}
+.banner .aside a:first-child{
+    font-size: 16px;
+    margin-right: 14px;
+}
+.banner .aside a:last-child{
+    float: right;
+    width: 6px;
+    height: 10px;
+    background: url("./../img/精灵图.PNG") -80px -110px;
+    margin-top: 22px;
+}
+.banner .aside li:hover{
+    background-color: #27ba9b;
+}
+.banner .pic{
+    width: 950px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .pic ul{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner .pic ul li{
+    width: 100%;
+    height: 100%;
+}
+.banner .pic img{
+    width: 100%;
+    height: 500px;
+}
+.banner .pic ol{
+    position: absolute;
+    bottom: 14px;
+    right: 0px;
+    display: flex;
+}
+.pic ol li{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 22px;
+}
+.pic ol li span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+.pic ol li.active{
+    background: rgba(255, 255, 255, 0.6);
+}
+.pic ol .active span{
+    background: #fff;
+}
+
+
+/* 新鲜生物 */
+.goods .title{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 10px;
+}
+.goods .title h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin-right: 36px;
+}
+.goods .title p{
+    color: #A1A1A1;
+    position: relative;
+    bottom: -7px;
+}
+.goods .title a{
+    color: #A1A1A1;
+    position: relative;
+    left: 0;
+    margin-left: auto;
+}
+.goods .title a span{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background: url("./../img/精灵图.PNG") 0 -110px;
+    margin-left: 10px;
+}
+.goods .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.goods .bd ul li{
+    width: 294px;
+}
+.goods .bd li img{
+    width: 100%;
+    display: block;
+}
+.goods .bd .price{
+    height: 84px;
+    text-align: center;
+    background-color: #EEF9F4;
+    padding-top: 18px;
+}
+.goods .price p{
+    font-size: 20px;
+    color: #333;
+}
+.goods .price p:last-child{
+    margin-top: 6px;
+    font-size: 22px;
+    color: #AA2113;
+}
+.goods .bd .reco{
+    height: 84px;
+    text-align: center;
+    padding-top: 18px;
+}
+.goods .reco p{
+    font-size: 20px;
+    color: #333;
+}
+.goods .reco p:last-child{
+    margin-top: 6px;
+    font-size: 16px;
+    color: #A1A1A1;
+}
+
+
+/* 热门品牌 */
+.brand{
+    height: 432px;
+    background-color: #f1f1f1;
+}
+.brand .pre{
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-top: 50px;
+}
+.brand .pre a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("./../img/精灵图.PNG") -32px -106px #e4e4e4;
+}
+.brand .pre a:first-child{
+    transform: scaleX(-1);
+    margin-right: 14px;
+}
+.brand .pre a:hover{
+    background-color: #27ba9b;
+}
+.brand .hot{
+    display: flex;
+    justify-content: space-between;
+}
+.brand .hot li{
+    width: 236px;
+}
+.brand .hot li img{
+    width: 100%;
+}
+
+
+/* 生鲜 */
+.fresh .title{
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.fresh .title h2{
+    font-size: 30px;
+    font-weight: normal;
+    margin-right: 36px;
+}
+.fresh .title ul{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.fresh .title ul li{
+    padding: 2px 6px;
+    margin: 5px;
+}
+.fresh .title li a{
+    color: #333;
+}
+.fresh .title ul li:hover{
+    background-color: #5EB69C;
+}
+.fresh .title li:hover a{
+    color: #fff;
+}
+.fresh .title .all{
+    color: #A1A1A1;
+    margin-bottom: 7px;
+}
+.fresh .title .all span{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background: url("./../img/精灵图.PNG") 0 -110px;
+    margin-left: 6px;
+}
+.fresh .content{
+    display: flex;
+}
+.fresh .content .left{
+    width: 240px;
+    height: 610px;
+    margin-right: 24px;
+}
+.fresh .content .right ul{
+    width: 936px;
+    height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fresh .content .right li{
+    width: 234px;
+    height: 305px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.fresh .right li img{
+    width: 190px;
+    height: 171px;
+    margin: 12px 0;
+}
+.fresh .right li p{
+    color: #333;
+}
+.fresh .right li span{
+    color: #AF2F22;
+    font-size: 24px;
+    margin-top: 4px;
+}
+
+/* 最新专题 */
+.news .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin-top: 10px;
+}
+.news .title h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+.news .title a{
+    color: #A1A1A1;
+}
+.news .title a span{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background: url("./../img/精灵图.PNG") 0 -110px;
+    margin-left: 10px;
+}
+.news ul{
+    width: 100%;
+    display: flex;
+}
+.news ul li{
+    width: 400px;
+}
+.news ul li img{
+    width: 100%;
+}
+.news .comment{
+    display: flex;
+    padding: 0 10px;
+    margin: 20px 0; 
+}
+.news .comment p{
+    color: #A1A1A1;
+}
+.news .comment p:nth-child(2) {
+    margin: 0 40px;
+}
+.news .comment p:last-child {
+    margin-left: auto;
+}
+.news .comment p span{
+    display: inline-block;
+    margin-right: 4px;
+}
+.news .comment p:nth-child(1) span{
+    width: 16px;
+    height: 15px;
+    background: url("./../img/精灵图.PNG") -120px -108px;
+}
+.news .comment p:nth-child(2) span{
+    width: 18px;
+    height: 12px;
+    background: url("./../img/精灵图.PNG") -158px -110px;
+}
+.news .comment p:nth-child(3) span{
+    width: 18px;
+    height: 18px;
+    background: url("./../img/精灵图.PNG") -198px -110px;
+    position: relative;
+    top: 6px;
+}
+
+
+/* footer */
+.footer{
+    height: 580px;
+    background-color: #f5f5f5;
+    margin-top: 50px;
+}
+.footer .one{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #e8e8e8;
+}
+.footer .one p{
+    font-size: 28px;
+}
+.footer .one p span{
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 18px;
+    border-radius: 58px;
+    position: relative;
+    top: 18px;
+}
+.footer .one p:nth-child(1) span,
+.footer .one p:nth-child(3) span{
+    background: url("./../img/精灵图.PNG") -64px 0 #26b99a;
+}
+.footer .one p:nth-child(2) span{
+    background: url("./../img/精灵图.PNG") -130px 0 #26b99a;
+}
+.footer .one p:nth-child(4) span{
+    background: url("./../img/精灵图.PNG") 0 0 #26b99a;
+}
+.footer .two{
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.footer .two ul p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer .two li{
+    padding: 4px 2px;
+}
+.footer .two li a{
+    color: #969696;
+}
+.footer .two ul:last-child{ 
+    color: #969696;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .three{
+    text-align: center;
+}
+.footer .three div a,
+p{
+    color: #A1A1A1;
+    font-size: 18px;
+}
+.footer .three p{
+    margin-top: 20px;
+}
